@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>(●ˇ∀ˇ●)Password Generator(●'◡'●)</title>
+  </head>
+  <body>
+    <div class="generalContent">
+      <img src="./imgs/ilustraçao.png" />
+      <h1>Password Generator</h1>
+      <div class="output">
+        <input type="text" id="passwordOutput" readonly />
+        <button id="copyBtn">Copy</button>
+      </div>
+
+      <!-- Slider de tamanho -->
+      <div class="Length">
+        <label for="lengthRange"
+          >LENGTH:
+          <span id="lengthValue">12</span>
+        </label>
+        <input type="range" id="lengthRange" min="4" max="32" value="12" />
+      </div>
+
+      <hr />
+
+      <!-- Opções -->
+      <div class="Settings">
+        <p>SETTINGS</p>
+        <ul>
+          <li>
+            <label
+              ><input type="checkbox" id="uppercase" checked /> Include
+              Uppercase</label
+            >
+          </li>
+          <li>
+            <label
+              ><input type="checkbox" id="lowercase" checked /> Include
+              Lowercase</label
+            >
+          </li>
+          <li>
+            <label
+              ><input type="checkbox" id="numbers" checked /> Include
+              Numbers</label
+            >
+          </li>
+          <li>
+            <label
+              ><input type="checkbox" id="symbols" /> Include Symbols</label
+            >
+          </li>
+        </ul>
+      </div>
+
+      <hr />
+
+      <!-- Botão principal -->
+      <div class="BtnGenerate">
+        <p id="generateBtn">GENERATE PASSWORD</p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,183 @@
+@font-face {
+  font-family: minhaFonte;
+  src: url("./fonts/Cafe24Dongdong-v2.0.otf");
+}
+
+body {
+  background-color: #fff5e8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: minhaFonte, sans-serif;
+  color: #ff468d;
+}
+
+img {
+  position: absolute;
+  width: 260px;
+  bottom: -55px;
+  right: -130px;
+  z-index: 1;
+}
+
+h1 {
+  font-family: minhaFonte;
+  color: #ff7aad;
+  text-align: baseline;
+}
+
+.generalContent {
+  position: relative;
+  z-index: 0;
+  opacity: 85%;
+  width: 350px;
+  padding: 20px;
+  background-color: #fffcfd;
+  border-radius: 20px;
+  border: 3px solid pink;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.generalContent > hr {
+  border: none;
+  height: 1px;
+  background-color: pink;
+  margin: 0;
+}
+
+.output {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+
+  background: #fffcfd;
+  border: 2px solid pink;
+  border-radius: 12px;
+  padding: 8px 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+#passwordOutput {
+  flex: 1;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 16px;
+  font-family: minhaFonte, sans-serif;
+  color: #ff468d;
+}
+
+#copyBtn {
+  background: #ff468d;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 12px;
+  font-size: 14px;
+  font-family: minhaFonte, sans-serif;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+#copyBtn:hover {
+  background: pink;
+  color: #ff468d;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 6px;
+  border-radius: 10px;
+  background: linear-gradient(
+    to right,
+    #ff7aad 0%,
+    #ff7aad var(--val, 50%),
+    #ffd6e0 var(--val, 50%),
+    #ffd6e0 100%
+  );
+  outline: none;
+}
+
+/* Thumb */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #ff7aad;
+  cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #ff7aad;
+  cursor: pointer;
+}
+
+/* Botão principal */
+.BtnGenerate p {
+  text-align: center;
+  padding: 10px;
+  background: #ff468d;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+  color: #fffcfd;
+}
+.BtnGenerate p:hover {
+  background: pink;
+  color: #ff468d;
+}
+
+/* Toggles*/
+.Settings input[type="checkbox"] {
+  appearance: none;
+  top: 10px;
+  width: 40px;
+  height: 20px;
+  background: pink;
+  border-radius: 20px;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  transition: 0.3s;
+}
+.Settings input[type="checkbox"]::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  top: 2px;
+  left: 2px;
+  background: #fffcfd;
+  transition: 0.3s;
+}
+.Settings input[type="checkbox"]:checked {
+  background: #ff7aad;
+}
+.Settings input[type="checkbox"]:checked::before {
+  transform: translateX(20px);
+}
+.Settings ul {
+  list-style: none;
+  padding: 0;
+  margin: 0px 10px;
+}
+
+.Settings li {
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
